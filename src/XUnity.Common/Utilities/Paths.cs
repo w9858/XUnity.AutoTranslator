@@ -31,7 +31,7 @@ namespace XUnity.Common.Utilities
 
       private static string GetAndSetGameRoot()
       {
-         return _gameRoot = new DirectoryInfo( Application.dataPath ).Parent.FullName;
+         return _gameRoot = new DirectoryInfo( Application.persistentDataPath ).FullName;
       }
    }
 }

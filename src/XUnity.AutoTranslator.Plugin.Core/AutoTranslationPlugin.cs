@@ -2667,7 +2667,7 @@ namespace XUnity.AutoTranslator.Plugin.Core
             XuaLogger.AutoTranslator.Info( "Scanning for plugins to hook for translations..." );
          }
 
-         var gameDataPath = Application.dataPath.UseCorrectDirectorySeparators();
+         var gameDataPath = Application.persistentDataPath.UseCorrectDirectorySeparators();
          var assemblies = AppDomain.CurrentDomain.GetAssemblies();
          foreach( var assembly in assemblies )
          {
